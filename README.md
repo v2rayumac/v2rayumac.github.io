@@ -1,4 +1,4 @@
-# V2rayU Mac - 5月17日19.6M/S|免费Shadowrocket/SSR/Clash/V2ray订阅节点分享  更新时间 2025-05-17 14:08:44
+# V2rayU Mac - 5月18日18.2M/S|免费Shadowrocket/SSR/V2ray/Clash订阅节点分享  更新时间 2025-05-18 10:18:14
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://v2rayumac.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://v2rayumac.github.io/uploads/2025/05/0-20250517.yaml
-- https://v2rayumac.github.io/uploads/2025/05/1-20250517.yaml
-- https://v2rayumac.github.io/uploads/2025/05/2-20250517.yaml
-- https://v2rayumac.github.io/uploads/2025/05/3-20250517.yaml
-- https://v2rayumac.github.io/uploads/2025/05/4-20250517.yaml
+- https://v2rayumac.github.io/uploads/2025/05/0-20250518.yaml
+- https://v2rayumac.github.io/uploads/2025/05/1-20250518.yaml
+- https://v2rayumac.github.io/uploads/2025/05/2-20250518.yaml
+- https://v2rayumac.github.io/uploads/2025/05/3-20250518.yaml
+- https://v2rayumac.github.io/uploads/2025/05/4-20250518.yaml
 
 ### V2ray订阅链接
 
-- https://v2rayumac.github.io/uploads/2025/05/0-20250517.txt
-- https://v2rayumac.github.io/uploads/2025/05/1-20250517.txt
-- https://v2rayumac.github.io/uploads/2025/05/2-20250517.txt
-- https://v2rayumac.github.io/uploads/2025/05/3-20250517.txt
-- https://v2rayumac.github.io/uploads/2025/05/4-20250517.txt
+- https://v2rayumac.github.io/uploads/2025/05/0-20250518.txt
+- https://v2rayumac.github.io/uploads/2025/05/1-20250518.txt
+- https://v2rayumac.github.io/uploads/2025/05/2-20250518.txt
+- https://v2rayumac.github.io/uploads/2025/05/3-20250518.txt
+- https://v2rayumac.github.io/uploads/2025/05/4-20250518.txt
 
 ### Sing-box订阅链接
 
-- https://v2rayumac.github.io/uploads/2025/05/20250517.json
+- https://v2rayumac.github.io/uploads/2025/05/20250518.json
 
 ## 更多clash节点订阅 ：
 
