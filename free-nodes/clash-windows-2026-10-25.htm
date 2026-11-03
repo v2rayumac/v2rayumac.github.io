@@ -282,19 +282,24 @@ reboot
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何优化 Clash 的 DNS 设置？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 的 VMess over WebSocket 适合什么场景？</h5></div>
     <div class="panel-body">
-        在 Clash 中使用自定义 DNS 可以加快域名解析速度。建议使用 doh（DNS over HTTPS）或 dot（DNS over TLS）配置方式，既能提升速度，也能保护隐私防止 DNS 泄露。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 DNS 模块如何提升解析速度？</h5></div>
-    <div class="panel-body">
-        V2Ray 内置 DNS 模块支持并行解析，可同时请求多个上游 DNS 服务器。用户可配置本地优先解析或远程解析策略，从而减少域名污染与延迟问题。<hr />    </div>
+        VMess over WebSocket 可以伪装成正常的 Web 流量，适用于被封锁较严格的网络环境。它通过将代理流量嵌入 WebSocket 协议中，使流量更难被检测和拦截。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 支持哪些内核？</h5></div>
     <div class="panel-body">
         PassWall2 支持多种代理内核，如 Xray、V2Ray、Sing-box、Trojan-go、Hysteria2 等。用户可在插件管理中切换所需内核，以获得不同协议与性能的支持。部分内核需手动下载并启用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何优化 Clash 的 DNS 设置？</h5></div>
+    <div class="panel-body">
+        在 Clash 中使用自定义 DNS 可以加快域名解析速度。建议使用 doh（DNS over HTTPS）或 dot（DNS over TLS）配置方式，既能提升速度，也能保护隐私防止 DNS 泄露。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 节点延迟排序如何优化网络体验？</h5></div>
+    <div class="panel-body">
+        Matsuri 会定期测速节点延迟，并结合策略组自动选择低延迟节点。无需手动切换，确保网页、视频和游戏流量通过最优节点，提高访问速度和网络稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议插件如何增强连接稳定性？</h5></div>
@@ -307,29 +312,24 @@ reboot
         gRPC 支持多路复用和长连接，适合高并发访问和移动网络场景。相比 TCP 或 WebSocket，它可以减少握手次数，降低延迟，同时提高连接稳定性和吞吐量，特别适合游戏或即时通讯。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式相比普通 VLESS 有哪些优势？</h5></div>
-    <div class="panel-body">
-        XTLS 模式减少冗余加密开销，提高传输效率，并在多连接高负载环境下表现更佳。同时仍保持 TLS 安全性，结合策略组可实现高性能和高隐蔽性的双重优势。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 多路复用如何降低延迟？</h5></div>
     <div class="panel-body">
         多路复用允许多个短连接共享同一通道，减少握手和加密开销，降低延迟。适用于高频短连接场景，如游戏和即时通讯，提升吞吐量和网络稳定性，保证流量快速传输。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 VMess over WebSocket 适合什么场景？</h5></div>
-    <div class="panel-body">
-        VMess over WebSocket 可以伪装成正常的 Web 流量，适用于被封锁较严格的网络环境。它通过将代理流量嵌入 WebSocket 协议中，使流量更难被检测和拦截。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点延迟排序如何优化网络体验？</h5></div>
-    <div class="panel-body">
-        Matsuri 会定期测速节点延迟，并结合策略组自动选择低延迟节点。无需手动切换，确保网页、视频和游戏流量通过最优节点，提高访问速度和网络稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 是什么？</h5></div>
     <div class="panel-body">
-        Sing-box 是新一代多协议代理框架，支持 VMess、VLess、Trojan、Hysteria、ShadowTLS 等协议。它比传统 V2Ray 更轻量化、模块化，并针对移动端和 Linux 系统进行了性能优化，受到开发者和高级用户的欢迎。    </div>
+        Sing-box 是新一代多协议代理框架，支持 VMess、VLess、Trojan、Hysteria、ShadowTLS 等协议。它比传统 V2Ray 更轻量化、模块化，并针对移动端和 Linux 系统进行了性能优化，受到开发者和高级用户的欢迎。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的 DNS 模块如何提升解析速度？</h5></div>
+    <div class="panel-body">
+        V2Ray 内置 DNS 模块支持并行解析，可同时请求多个上游 DNS 服务器。用户可配置本地优先解析或远程解析策略，从而减少域名污染与延迟问题。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 模式相比普通 VLESS 有哪些优势？</h5></div>
+    <div class="panel-body">
+        XTLS 模式减少冗余加密开销，提高传输效率，并在多连接高负载环境下表现更佳。同时仍保持 TLS 安全性，结合策略组可实现高性能和高隐蔽性的双重优势。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -378,16 +378,16 @@ reboot
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-12-clash-node-daily-updates.htm" title="V2rayU Mac - 9月12日22.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/Clash节点/V2ray节点订阅节点分享">V2rayU Mac - 9月12日22.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/Clash节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-8-clash-v2ray-ss-ssr.htm" title="V2rayU Mac - 10月8日23M/S|免费Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点订阅节点分享">V2rayU Mac - 10月8日23M/S|免费Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-10-13.htm" title="V2rayU Mac - 10月13日20.9M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/V2ray节点订阅节点分享">V2rayU Mac - 10月13日20.9M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-9-19.htm" title="V2rayU Mac - 9月19日20.5M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享">V2rayU Mac - 9月19日20.5M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-10-7.htm" title="V2rayU Mac - 10月7日19.6M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点订阅节点分享">V2rayU Mac - 10月7日19.6M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-10-5.htm" title="V2rayU Mac - 10月5日22.3M/S|免费V2ray节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点分享">V2rayU Mac - 10月5日22.3M/S|免费V2ray节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-10-11.htm" title="V2rayU Mac - 10月11日22.9M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Singbox节点订阅节点分享">V2rayU Mac - 10月11日22.9M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-14-node-share.htm" title="V2rayU Mac - 10月14日18.9M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点分享">V2rayU Mac - 10月14日18.9M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-2-free-node-subscribe.htm" title="V2rayU Mac - 10月2日22.4M/S|免费V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享">V2rayU Mac - 10月2日22.4M/S|免费V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-30-free-shadowrocket-node.htm" title="V2rayU Mac - 10月30日22M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">V2rayU Mac - 10月30日22M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-9-17.htm" title="V2rayU Mac - 9月17日18.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点订阅节点分享">V2rayU Mac - 9月17日18.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-18-free-shadowrocket-node.htm" title="V2rayU Mac - 10月18日21.7M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅节点分享">V2rayU Mac - 10月18日21.7M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-10-9.htm" title="V2rayU Mac - 10月9日22.9M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点订阅节点分享">V2rayU Mac - 10月9日22.9M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-10-11.htm" title="V2rayU Mac - 10月11日22.9M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Singbox节点订阅节点分享">V2rayU Mac - 10月11日22.9M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-10-19.htm" title="V2rayU Mac - 10月19日19.7M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点分享">V2rayU Mac - 10月19日19.7M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-14-node-share.htm" title="V2rayU Mac - 10月14日18.9M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点分享">V2rayU Mac - 10月14日18.9M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-9-21.htm" title="V2rayU Mac - 9月21日21.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅节点分享">V2rayU Mac - 9月21日21.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-20-clash-v2ray-ss-ssr.htm" title="V2rayU Mac - 9月20日19.6M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享">V2rayU Mac - 9月20日19.6M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-9-15.htm" title="V2rayU Mac - 9月15日22M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Trojan节点订阅节点分享">V2rayU Mac - 9月15日22M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Trojan节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -399,7 +399,10 @@ reboot
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">3</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
