@@ -244,39 +244,14 @@ A5：在设备的应用管理界面直接卸载即可，或通过第三方清理
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 是否可以与 Shadowsocks 客户端共存？</h5></div>
-    <div class="panel-body">
-        可以。Nekobox 配置独立，不影响其他客户端运行。用户可以同时使用 Shadowsocks、Clash 等客户端，通过策略组或分流规则选择合适节点，互不干扰。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 如何实现按应用分流？</h5></div>
-    <div class="panel-body">
-        Surfboard 支持通过策略组和规则文件按应用分流，将不同应用的流量分配到不同节点。这样可保证游戏或视频走低延迟节点，提高访问速度并优化网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow 与 Clash 的核心区别是什么？</h5></div>
     <div class="panel-body">
         Mellow 采用基于透明代理的架构，适合路由或系统级流量重定向，而 Clash 更偏向规则式应用代理。Mellow 的灵活性更高，但配置复杂；Clash 则兼顾易用性与功能扩展性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 策略组如何优化视频和游戏流量？</h5></div>
+    <div class="panel-heading"><h5>Nekobox 是否可以与 Shadowsocks 客户端共存？</h5></div>
     <div class="panel-body">
-        Sing-box 可根据策略组和规则文件，将不同应用的流量分配到最佳节点。视频和游戏流量可选择低延迟、高带宽节点，保证流畅播放和操作响应，提高整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 节点延迟检测如何优化视频访问？</h5></div>
-    <div class="panel-body">
-        WinXray 定期测速节点延迟和丢包率，并结合策略组自动选择最佳节点。保证视频流量通过低延迟节点，减少缓冲和卡顿，提高播放流畅度和网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 如何实现节点延迟自动切换？</h5></div>
-    <div class="panel-body">
-        Nekoray 支持配置策略组（Policy Group），用户可设置 URL 测试或周期检测机制，根据延迟自动选择最优节点。此功能能提升稳定性，尤其适合多线路机场订阅用户。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 支持节点分类管理吗？</h5></div>
-    <div class="panel-body">
-        支持。用户可将节点按地区、用途或延迟分类，结合策略组和规则进行分流。这样可以快速选择最佳节点，提高访问效率并便于维护大量节点。<hr />    </div>
+        可以。Nekobox 配置独立，不影响其他客户端运行。用户可以同时使用 Shadowsocks、Clash 等客户端，通过策略组或分流规则选择合适节点，互不干扰。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 是否支持 UDP 协议转发？</h5></div>
@@ -289,9 +264,34 @@ A5：在设备的应用管理界面直接卸载即可，或通过第三方清理
         Potatso Lite 不支持自动订阅功能，用户需手动添加节点。如果想批量导入订阅，可使用其他客户端生成节点二维码，再手动扫描添加。适合轻量使用者。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 如何实现节点延迟自动切换？</h5></div>
+    <div class="panel-body">
+        Nekoray 支持配置策略组（Policy Group），用户可设置 URL 测试或周期检测机制，根据延迟自动选择最优节点。此功能能提升稳定性，尤其适合多线路机场订阅用户。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 节点延迟检测如何优化视频访问？</h5></div>
+    <div class="panel-body">
+        WinXray 定期测速节点延迟和丢包率，并结合策略组自动选择最佳节点。保证视频流量通过低延迟节点，减少缓冲和卡顿，提高播放流畅度和网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 的 QUIC 协议如何降低延迟？</h5></div>
     <div class="panel-body">
-        QUIC 协议基于 UDP，多路复用和拥塞控制优化，可减少握手延迟和包重传次数。Hysteria2 利用 QUIC 的特性，使高延迟或丢包网络下依然保持低延迟和高稳定性。    </div>
+        QUIC 协议基于 UDP，多路复用和拥塞控制优化，可减少握手延迟和包重传次数。Hysteria2 利用 QUIC 的特性，使高延迟或丢包网络下依然保持低延迟和高稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 如何实现按应用分流？</h5></div>
+    <div class="panel-body">
+        Surfboard 支持通过策略组和规则文件按应用分流，将不同应用的流量分配到不同节点。这样可保证游戏或视频走低延迟节点，提高访问速度并优化网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 支持节点分类管理吗？</h5></div>
+    <div class="panel-body">
+        支持。用户可将节点按地区、用途或延迟分类，结合策略组和规则进行分流。这样可以快速选择最佳节点，提高访问效率并便于维护大量节点。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 策略组如何优化视频和游戏流量？</h5></div>
+    <div class="panel-body">
+        Sing-box 可根据策略组和规则文件，将不同应用的流量分配到最佳节点。视频和游戏流量可选择低延迟、高带宽节点，保证流畅播放和操作响应，提高整体网络体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -340,16 +340,16 @@ A5：在设备的应用管理界面直接卸载即可，或通过第三方清理
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-10-31.htm" title="V2rayU Mac - 10月31日18.1M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享">V2rayU Mac - 10月31日18.1M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-10-21.htm" title="V2rayU Mac - 10月21日19.8M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点订阅节点分享">V2rayU Mac - 10月21日19.8M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-10-15.htm" title="V2rayU Mac - 10月15日18.5M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点分享">V2rayU Mac - 10月15日18.5M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-11-7.htm" title="V2rayU Mac - 11月7日20.4M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点订阅节点分享">V2rayU Mac - 11月7日20.4M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-11-10-clash-node-daily-updates.htm" title="V2rayU Mac - 11月10日20.6M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点订阅节点分享">V2rayU Mac - 11月10日20.6M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-30-free-shadowrocket-node.htm" title="V2rayU Mac - 10月30日22M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">V2rayU Mac - 10月30日22M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/clash-windows-2026-10-25.htm" title="V2rayU Mac - 10月25日20.1M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点分享">V2rayU Mac - 10月25日20.1M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-20-clash-v2ray-ss-ssr.htm" title="V2rayU Mac - 9月20日19.6M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享">V2rayU Mac - 9月20日19.6M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-30-clash-v2ray-ss-ssr.htm" title="V2rayU Mac - 9月30日21.8M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅节点分享">V2rayU Mac - 9月30日21.8M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-node-share.htm" title="V2rayU Mac - 9月18日22.3M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点分享">V2rayU Mac - 9月18日22.3M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-4-clash-node.htm" title="V2rayU Mac - 9月4日20.3M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点订阅节点分享">V2rayU Mac - 9月4日20.3M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-26-clash-node-daily-updates.htm" title="V2rayU Mac - 9月26日18.1M/S|免费V2ray节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点分享">V2rayU Mac - 9月26日18.1M/S|免费V2ray节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-28-free-clash.htm" title="V2rayU Mac - 9月28日21.6M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点订阅节点分享">V2rayU Mac - 9月28日21.6M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-10-3.htm" title="V2rayU Mac - 10月3日20.1M/S|免费Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点订阅节点分享">V2rayU Mac - 10月3日20.1M/S|免费Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-9-17.htm" title="V2rayU Mac - 9月17日18.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点订阅节点分享">V2rayU Mac - 9月17日18.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-18-free-shadowrocket-node.htm" title="V2rayU Mac - 10月18日21.7M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅节点分享">V2rayU Mac - 10月18日21.7M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-24-free-node-subscribe.htm" title="V2rayU Mac - 10月24日22M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享">V2rayU Mac - 10月24日22M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-20-clash-node.htm" title="V2rayU Mac - 10月20日18.7M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点订阅节点分享">V2rayU Mac - 10月20日18.7M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-26-clash-node.htm" title="V2rayU Mac - 10月26日21.3M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/SSR节点/V2ray节点/Clash节点订阅节点分享">V2rayU Mac - 10月26日21.3M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/SSR节点/V2ray节点/Clash节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -361,13 +361,10 @@ A5：在设备的应用管理界面直接卸载即可，或通过第三方清理
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">3</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+                <h4><span class="badge" style="float: right;">10</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">21</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                     </ul>
     </div>
